@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classifier</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 50vh;
+            margin-top: 120px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fashion e-Commerce Image Classifier</h1>
+    
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*">
+        <br>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if image %}
+        <h2>Input Image:</h2>
+        <img src="data:image/jpeg;base64,{{ image }}" alt="Input Image" style="max-width: 15%;">
+    {% endif %}
+
+    {% if prediction %}
+        <p style="font-size: 30px">Category: {{ prediction }}</p>
+    {% endif %}
+</body>
+</html>
