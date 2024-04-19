@@ -9,6 +9,8 @@ This repository contains code for automating fashion product categorisation usin
   <li><b>models/</b>: This folder contains the stored ResNet model (resnet_best_model.pth).</li>
   <li><b>templates/</b>: This folder contains index.html, which contains the structure of our prototype's frontend.</li>
   <li><b>app.py</b>: This file contains code for the Flask backend for our prototype.</li>
+  <li><b>test_labels.csv</b>: This file contains the labels for the test images.</li>
+  <li><b>train_labels.csv</b>: This file contains the labels for the train images.</li>
 </ul>
 
 <b>Dataset</b>: https://nusu-my.sharepoint.com/:f:/r/personal/e0543579_u_nus_edu/Documents/IS4242/dataset?csf=1&web=1&e=X7wXaw
