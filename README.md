@@ -4,7 +4,6 @@ This repository contains code for automating fashion product categorisation usin
 
 <h1>Files</h1>
 <ul>
-  <li><b>EDA.ipynb</b>: This notebook contains code for exploratory data analysis, including visualizations of class distributions, image samples, and average images.</li>
   <li><b>dataset_prep.ipynb</b>: This notebook contains code for data augmentation using the Albumentations library.</li>
   <li><b>collated.ipynb</b>: This notebook contains code for preprocessing the dataset and building machine learning models (SVM, KNN, ResNet).</li>
   <li><b>models/</b>: This folder contains the stored ResNet model (resnet_best_model.pth).</li>
