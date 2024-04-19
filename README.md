@@ -7,7 +7,8 @@ This repository contains code for automating fashion product categorisation usin
   <li><b>dataset_prep.ipynb</b>: This notebook contains code for data augmentation using the Albumentations library.</li>
   <li><b>collated.ipynb</b>: This notebook contains code for preprocessing the dataset and building machine learning models (SVM, KNN, ResNet).</li>
   <li><b>models/</b>: This folder contains the stored ResNet model (resnet_best_model.pth).</li>
-  <li><b>app.py</b>: This file contains code for our frontend prototype.</li>
+  <li><b>templates/</b>: This folder contains index.html, which contains the structure of our prototype's frontend.</li>
+  <li><b>app.py</b>: This file contains code for the Flask backend for our prototype.</li>
 </ul>
 
 <b>Dataset</b>: https://nusu-my.sharepoint.com/:f:/r/personal/e0543579_u_nus_edu/Documents/IS4242/dataset?csf=1&web=1&e=X7wXaw
