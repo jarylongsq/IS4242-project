@@ -32,7 +32,7 @@ def predict_image(img):
         output = model(input_tensor)
 
     # Interpret predictions
-    labels_map = {0: 'tops', 1: 'bottoms', 2: 'bags', 3: 'shoes', 4: 'others'}
+    labels_map = {0: 'Top', 1: 'Bottom', 2: 'Bag', 3: 'Shoe', 4: 'Others'}
     probabilities = torch.nn.functional.softmax(output[0], dim=0)
     predicted_class_index = torch.argmax(probabilities).item()
 
